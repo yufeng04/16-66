@@ -1,0 +1,271 @@
+header {
+	width: 100%;
+	height: auto;
+}
+
+nav {
+	align-items: center;
+	width: 100%;
+	height: 70px;
+	background: #000;
+}
+
+.logo {
+	float: left;
+	margin-left: 16.7%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 50px;
+	height: 10px;
+	border-radius: 50%;
+}
+/*导航菜单*/
+.nav-menu {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 16.7%;
+}
+.nav-menu li {
+	margin: 25px;
+	font-size: 16px;
+	color: #fff;
+	list-style: none;
+}
+.nav-menu li:hover {
+	font-size: 18px;
+}
+
+.delta {
+	margin-left: 10px;
+	width: 10px;
+	height: 17px;
+}
+.delta:hover {
+	transform: rotate(-90deg);
+}
+
+/*banner*/
+.banner {
+	display: flex;
+	width: 100%;
+}
+.banner-left {
+    width: 40%;
+    height: 200px;
+    flex: auto;
+    background: #2d7079; 
+}
+.banner-right {
+	width: 60%;
+	height: 200px;
+	flex: auto;
+}
+.first-word {
+	line-height: 20px;
+	font-size: 32px;
+	color: rgba(255,255,255,0.5);
+}
+.third-word {
+	line-height: 20px;
+	font-size: 44px;
+	color: rgba(255,255,255,1);
+}
+
+
+@media screen and (max-width: 960px) {
+    .word {
+        margin-left: 6.2%;
+    }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1280px) {
+    .word {
+        margin-left: 15.6%;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    .word {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .word {
+        margin-left: 35%;
+    }
+    .banner-right:after {
+    	content: ""
+    	height: 200px;
+    	width: auto;
+    	background: #2d7079;
+    }
+}
+
+/*页面主体部分*/
+.content {
+	width: 960px;
+	height: auto;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*one two three 模块*/
+.three-modules {
+    display: flex;
+    justify-content: space-between;
+}
+.module {
+	height: 240px;
+	width: 310px;
+	border: 1px solid #ccc;
+}
+.module-img {
+	float: right;
+	height: 80px;
+	width: 80px;
+	margin: 20px;
+}
+.title {
+	margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+	font-size: 48px;
+    color: #000;
+}
+.sub-title {
+	margin-left: 20px;
+	font-size: 24px;
+    color: rgba(0,0,0,0.5);
+}
+.module-text {
+	margin: 20px;
+    flex: 1 0 content;
+	font-size: 16px;
+    color: #000;
+    overflow: hidden; 	
+}
+
+/*banner 轮播*/
+.banner-carousel {
+	display: flex;
+	align-items: flex-end;
+	height: 180px;
+	width: 100%;
+	background: url(images/12_66_7.jpg) no-repeat;
+}
+.banner-carousel p {
+	text-align: bottom;
+	font-size: 16px;
+	color: #000;
+}
+
+/*tab 导航*/
+.tab {
+	margin-top: 20px;
+}
+.tab-nav td {
+	font-size: 24px;
+}
+.tab-nav td:hover {
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+/*表格*/
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table tr th:nth-child(odd),.table tr td:nth-child(odd){
+  background-color: #eeeeee;
+}
+caption {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: -80%;
+	font-size: 18px;
+	font-weight: 700;
+}
+th {
+	height: 70px;
+    width: 240px;
+    margin-top:1px;
+    margin-bottom: 1px;
+    font-size: 18px;
+    word-wrap: break-word;
+    text-align: center;
+}
+td {
+	height: 70px;
+    width: 240px;
+    margin-top:1px;
+    margin-bottom: 1px;
+    font-size: 14px;
+    word-wrap: break-word;
+    text-align: center;
+}
+.green {
+    font-size: 18px;
+    color: #417505;
+}
+.blue {
+    font-size: 18px;
+    color: #4a90e2;
+}
+.red {
+	font-size: 18px;
+    color: #d0021b;
+}
+
+/*用户信息收集部分*/
+.droplist {
+	height: 35px;
+    width: 225px;
+    /*margin:10px;*/
+    margin-left: 80px;
+    font-size:12px;
+}
+.input-email {
+	height: 30px;
+    width: 225px;
+    /*margin:10px;*/
+    margin-left: 80px;
+    font-size:12px;
+}
+.submit-button {
+	height: 35px;
+    width: 100px;
+    background: linear-gradient(to bottom,#fff,#5697e4);
+    border-radius: 6px;
+    font-size: 14px;
+    color: #fff;
+}
+.bottom-banner {
+	display: flex;
+	justify-content: flex-start;
+	height: auto;
+	width:100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.bb-left {
+	display: flex;
+    flex: auto;
+    flex-direction: column;
+    height: 220px;
+    background: linear-gradient(to right,#63839f,#fff); 
+    line-height: 20px;
+}
+.bb-right {
+	flex: auto;
+	height: 220px;
+}
+/*版权*/
+.copyright {
+    font-size: 14px;
+    text-align: center;
+}
